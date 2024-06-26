@@ -1,0 +1,8 @@
+/res
+*.exe
+*.qrc
+*.rc
+*.md
+*.pdf
+*.ui
+*.pro
