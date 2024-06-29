@@ -6,3 +6,5 @@
 *.pdf
 *.ui
 *.pro
+*.user
+.gitignore

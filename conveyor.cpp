@@ -115,6 +115,8 @@ bool Conveyor::__is_conveyor__() const
 
 int Conveyor::function(Mine &ore)
 {
+    set_occupied(true);
+
     if (from_direction == get_direction())
     {
         if (from_direction % 2)
@@ -135,17 +137,12 @@ int Conveyor::function(Mine &ore)
     {
         ore.getx() += delta_x;
         ore.gety() += delta_y;
-        set_occupied(false);
     }
     else if (Global::map[next_index] && Global::map[next_index]->__is_machine__() && static_cast<Machine *>(Global::map[next_index])->can_enter(get_index()))
     {
         ore.getx() += delta_x;
         ore.gety() += delta_y;
         set_occupied(false);
-    }
-    else
-    {
-        set_occupied(true);
     }
 
     return 0;
