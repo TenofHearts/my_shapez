@@ -39,27 +39,87 @@ Window::Window(QWidget *parent)
         {
             QTextStream is(&file);
 
-            is >> Global::coin_num;
-            is >> Global::hub_std;
-            is >> Global::ore_price;
-
-            for (int i = 0; i < 240; ++i)
+            try
             {
-                is >> Global::init_map[i];
+                is >> Global::coin_num;
+                if (is.atEnd() || is.status() != QTextStream::Ok)
+                {
+                    throw -1;
+                }
+                is >> Global::hub_std;
+                if (is.atEnd() || is.status() != QTextStream::Ok)
+                {
+                    throw -1;
+                }
+                is >> Global::ore_price;
+                if (is.atEnd() || is.status() != QTextStream::Ok)
+                {
+                    throw -1;
+                }
+
+                for (int i = 0; i < 240; ++i)
+                {
+                    is >> Global::init_map[i];
+                    if (is.atEnd() || is.status() != QTextStream::Ok)
+                    {
+                        throw -1;
+                    }
+                }
+
+                is >> Global::conveyor_upgrade;
+                if (is.atEnd() || is.status() != QTextStream::Ok)
+                {
+                    throw -1;
+                }
+                Global::conveyor_speed = Global::belt_speed[Global::conveyor_upgrade];
+                is >> Global::miner_upgrade;
+                if (is.atEnd() || is.status() != QTextStream::Ok)
+                {
+                    throw -1;
+                }
+                Global::miner_speed = Global::produce_time[Global::miner_upgrade];
+                is >> Global::cutter_upgrade;
+                if (is.atEnd() || is.status() != QTextStream::Ok)
+                {
+                    throw -1;
+                }
+                Global::cutter_speed = Global::produce_time[Global::cutter_upgrade];
+                is >> Global::grid_upgrade;
+                if (is.atEnd() || is.status() != QTextStream::Ok)
+                {
+                    throw -1;
+                }
+                Global::grid_std = Global::grid_upgrade;
+
+                for (int i = 0; i < 3; ++i)
+                {
+                    is >> Level::cur[i];
+                    if (is.atEnd() || is.status() != QTextStream::Ok)
+                    {
+                        throw -1;
+                    }
+                    is >> Level::goal[i];
+                    if (is.atEnd() || is.status() != QTextStream::Ok)
+                    {
+                        throw -1;
+                    }
+                }
+                is >> Level::cur[3];
+                if (is.atEnd() || is.status() != QTextStream::Ok)
+                {
+                    throw -1;
+                }
+                is >> Level::goal[3];
+                if (is.status() != QTextStream::Ok)
+                {
+                    throw -1;
+                }
             }
-
-            is >> Global::conveyor_upgrade;
-            Global::conveyor_speed = Global::belt_speed[Global::conveyor_upgrade];
-            is >> Global::miner_upgrade;
-            Global::miner_speed = Global::produce_time[Global::miner_upgrade];
-            is >> Global::cutter_upgrade;
-            Global::cutter_speed = Global::produce_time[Global::cutter_upgrade];
-            is >> Global::grid_upgrade;
-            Global::grid_std = Global::grid_upgrade;
-
-            for (int i = 0; i < 4; ++i)
+            catch (int)
             {
-                is >> Level::cur[i] >> Level::goal[i];
+                QMessageBox::information(this, "Warning!!!", "存档已受损，将开始新游戏");
+
+                Global::reset_map();
             }
         }
         file.close();
