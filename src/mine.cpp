@@ -36,12 +36,6 @@ void action(QVector<Mine *> &vec)
 {
     vec.erase(std::remove_if(vec.begin(), vec.end(), [](Mine *ore){
         int index = ore->get_index();
-        // int last_index = ore->last_index;
-        // if (index != last_index && Global::map[last_index] && Global::map[last_index]->__is_machine__() && static_cast<Machine *>(Global::map[last_index])->__is_conveyor__())
-        // {
-        //     static_cast<Conveyor *>(Global::map[last_index])->set_occupied(false);
-        //     ore->last_index = index;
-        // }
         if (Global::map[index] && Global::map[index]->__is_machine__())
         {
             if (static_cast<Machine *>(Global::map[index])->function(*ore))

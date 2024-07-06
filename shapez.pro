@@ -9,51 +9,51 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    conveyor.cpp \
-    cutter.cpp \
-    cutter_m.cpp \
-    gamescene.cpp \
-    global.cpp \
-    hub.cpp \
-    machine.cpp \
-    main.cpp \
-    merger.cpp \
-    mine.cpp \
-    mine_place.cpp \
-    miner.cpp \
-    pausemenu.cpp \
-    rotater.cpp \
-    shopmenu.cpp \
-    square.cpp \
-    sub_hub.cpp \
-    trashcan.cpp \
-    window.cpp
+    src/conveyor.cpp \
+    src/cutter.cpp \
+    src/cutter_m.cpp \
+    src/gamescene.cpp \
+    src/global.cpp \
+    src/hub.cpp \
+    src/machine.cpp \
+    src/main.cpp \
+    src/merger.cpp \
+    src/mine.cpp \
+    src/mine_place.cpp \
+    src/miner.cpp \
+    src/pausemenu.cpp \
+    src/rotater.cpp \
+    src/shopmenu.cpp \
+    src/square.cpp \
+    src/sub_hub.cpp \
+    src/trashcan.cpp \
+    src/window.cpp
 
 HEADERS += \
-    conveyor.h \
-    cutter.h \
-    cutter_m.h \
-    gamescene.h \
-    global.h \
-    hub.h \
-    machine.h \
-    merger.h \
-    mine.h \
-    mine_place.h \
-    miner.h \
-    pausemenu.h \
-    rotater.h \
-    shopmenu.h \
-    square.h \
-    sub_hub.h \
-    trashcan.h \
-    window.h
+    header/conveyor.h \
+    header/cutter.h \
+    header/cutter_m.h \
+    header/gamescene.h \
+    header/global.h \
+    header/hub.h \
+    header/machine.h \
+    header/merger.h \
+    header/mine.h \
+    header/mine_place.h \
+    header/miner.h \
+    header/pausemenu.h \
+    header/rotater.h \
+    header/shopmenu.h \
+    header/square.h \
+    header/sub_hub.h \
+    header/trashcan.h \
+    header/window.h
 
 FORMS += \
-    gamescene.ui \
-    pausemenu.ui \
-    shopmenu.ui \
-    window.ui
+    ui/gamescene.ui \
+    ui/pausemenu.ui \
+    ui/shopmenu.ui \
+    ui/window.ui
 
 RC_FILE += icon.rc
 
