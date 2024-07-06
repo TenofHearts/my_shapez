@@ -1,5 +1,5 @@
-#include "sub_hub.h"
-#include <mine.h>
+#include "header/sub_hub.h"
+#include <header/mine.h>
 
 Sub_Hub::Sub_Hub(int i, QWidget *parent): Machine(Global::getXFromIndex(i), Global::getYFromIndex(i), 0, parent)
 {}

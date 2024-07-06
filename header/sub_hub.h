@@ -2,7 +2,7 @@
 #define SUB_HUB_H
 
 #include "machine.h"
-#include <global.h>
+#include "global.h"
 
 /*
  * 此类为Hub类的基类，处理了交付中心的基本功能，不能独立存在

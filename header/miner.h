@@ -2,8 +2,8 @@
 #define MINER_H
 
 #include "machine.h"
-#include <global.h>
-#include <mine_place.h>
+#include "global.h"
+#include "mine_place.h"
 
 /*
  * 采矿机

@@ -1,6 +1,6 @@
-#include "trashcan.h"
-#include "gamescene.h"
-#include "mine.h"
+#include "header/trashcan.h"
+#include "header/gamescene.h"
+#include "header/mine.h"
 
 Trashcan::Trashcan(int x, int y, QWidget *parent):
     Machine(x, y, LEFT, parent)

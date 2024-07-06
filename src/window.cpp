@@ -1,4 +1,4 @@
-#include "window.h"
+#include "header/window.h"
 #include "ui_window.h"
 #include <QMessageBox>
 

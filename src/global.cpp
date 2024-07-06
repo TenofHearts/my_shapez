@@ -1,6 +1,6 @@
-#include <global.h>
-#include <mine.h>
-#include <gamescene.h>
+#include <header/global.h>
+#include <header/mine.h>
+#include <header/gamescene.h>
 
 int Global::coin_num = 0;
 int Global::hub_std = SMALL_HUB;

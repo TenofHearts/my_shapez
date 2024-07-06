@@ -2,7 +2,7 @@
 #define MINE_PLACE_H
 
 #include "square.h"
-#include <global.h>
+#include "global.h"
 
 /*
  * 此类为采矿点的类，在地图中固定，不能放置，不能删除

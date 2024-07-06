@@ -2,18 +2,18 @@
 #define GAMESCENE_H
 
 #include <QWidget>
-#include <global.h>
-#include <shopmenu.h>
-#include <square.h>
-#include <machine.h>
-#include <cutter.h>
-#include <miner.h>
-#include <trashcan.h>
-#include <mine_place.h>
-#include <conveyor.h>
-#include <mine.h>
-#include <pausemenu.h>
-#include <hub.h>
+#include "global.h"
+#include "shopmenu.h"
+#include "square.h"
+#include "machine.h"
+#include "cutter.h"
+#include "miner.h"
+#include "trashcan.h"
+#include "mine_place.h"
+#include "conveyor.h"
+#include "mine.h"
+#include "pausemenu.h"
+#include "hub.h"
 
 /*
  * 游戏界面，一次运行中只会有一个实例Global::game

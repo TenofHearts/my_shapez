@@ -1,9 +1,9 @@
-#include "conveyor.h"
-#include "gamescene.h"
+#include "header/conveyor.h"
+#include "header/gamescene.h"
 #include <cmath>
 #include <algorithm>
 // #include <iostream>
-#include "mine.h"
+#include "header/mine.h"
 
 bool Belt::placing_belt = false;
 QVector<short> Belt::virtual_index;

@@ -2,7 +2,7 @@
 #define TRASHCAN_H
 
 #include "machine.h"
-#include <global.h>
+#include "global.h"
 
 /*
  * 垃圾桶，无条件删除所有矿

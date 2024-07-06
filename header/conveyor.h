@@ -2,7 +2,7 @@
 #define CONVEYOR_H
 
 #include "machine.h"
-#include <global.h>
+#include "global.h"
 
 /*
  * 传送带

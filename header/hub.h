@@ -2,7 +2,7 @@
 #define HUB_H
 
 #include "sub_hub.h"
-#include <global.h>
+#include "global.h"
 
 /*
  * 交付中心的左上角，一局游戏仅会实例化一个对象，并且无法删除

@@ -7,4 +7,5 @@
 *.ui
 *.pro
 *.user
+*.txt
 .gitignore

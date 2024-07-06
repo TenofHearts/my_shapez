@@ -2,7 +2,7 @@
 #define PAUSEMENU_H
 
 #include <QWidget>
-#include <global.h>
+#include "global.h"
 
 /*
  * 此类为暂停界面的设计，在一次调用中只有一个实例Global::pause

@@ -1,6 +1,6 @@
-#include "mine.h"
-#include "machine.h"
-#include <conveyor.h>
+#include "header/mine.h"
+#include "header/machine.h"
+#include <header/conveyor.h>
 
 Mine::Mine(int x, int y, int type, QWidget *parent)
     : Square(x, y, parent)

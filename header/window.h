@@ -1,12 +1,12 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include <global.h>
+#include "global.h"
 #include <QWidget>
 #include <QFileDialog>
-#include <gamescene.h>
-#include <pausemenu.h>
-#include <shopmenu.h>
+#include "gamescene.h"
+#include "pausemenu.h"
+#include "shopmenu.h"
 
 /*
  * 开始界面，一次调用只有一个实例Global::w

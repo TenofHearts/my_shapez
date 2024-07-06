@@ -2,7 +2,7 @@
 #define CUTTER_M_H
 
 #include "machine.h"
-#include <global.h>
+#include "global.h"
 
 /*
  * 此类为Cutter类的辅助，与Cutter类是组合关系

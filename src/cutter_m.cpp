@@ -1,6 +1,6 @@
-#include "cutter_m.h"
-#include <mine.h>
-#include <gamescene.h>
+#include "header/cutter_m.h"
+#include <header/mine.h>
+#include <header/gamescene.h>
 
 Cutter_M::Cutter_M(int x, int y, int direction, QWidget *parent):
     Machine(x,y,direction, parent)

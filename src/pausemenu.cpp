@@ -1,6 +1,6 @@
-#include "pausemenu.h"
+#include "header/pausemenu.h"
 #include "ui_pausemenu.h"
-#include "gamescene.h"
+#include "header/gamescene.h"
 
 PauseMenu::PauseMenu(QWidget *parent)
     : QWidget{parent}, ui(new Ui::PauseMenu)

@@ -1,4 +1,4 @@
-#include "square.h"
+#include "header/square.h"
 
 Square::Square(int x, int y, QWidget *parent, bool coverable)
     : QWidget{parent}, x(x), y(y), coverable(coverable)

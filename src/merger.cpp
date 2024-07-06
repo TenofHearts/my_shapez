@@ -1,5 +1,5 @@
-#include "merger.h"
-#include <gamescene.h>
+#include "header/merger.h"
+#include <header/gamescene.h>
 
 Merger::Merger(int x, int y, int direction, QWidget *parent):
     Machine(x, y, direction, parent)

@@ -1,8 +1,8 @@
-#include "gamescene.h"
+#include "header/gamescene.h"
 #include "ui_gamescene.h"
-#include <mine_place.h>
-#include <rotater.h>
-#include <merger.h>
+#include <header/mine_place.h>
+#include <header/rotater.h>
+#include <header/merger.h>
 
 static QVector<int> round_upgrade_list {97, 117, 136, 137, 138, 158, 177};
 static QVector<int> rect_upgrade_list {102, 103, 104, 122, 123, 141};

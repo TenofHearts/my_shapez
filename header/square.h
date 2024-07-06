@@ -2,7 +2,7 @@
 #define SQUARE_H
 
 #include <QWidget>
-#include <global.h>
+#include "global.h"
 
 /*
  * 地图上所有地块的基类，维护了基本的接口

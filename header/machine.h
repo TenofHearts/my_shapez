@@ -2,7 +2,7 @@
 #define MACHINE_H
 
 #include "square.h"
-#include <global.h>
+#include "global.h"
 
 /*
  * 该类为所有机器的基类，材质保存在Global::dest中，Global::b_dest中存放在放置时的材质

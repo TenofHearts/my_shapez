@@ -2,7 +2,7 @@
 #define SHOPMENU_H
 
 #include <QWidget>
-#include <global.h>
+#include "global.h"
 
 /*
  * 此类为商店界面，一次运行时只会有一个实例Global::shop

@@ -2,7 +2,7 @@
 #define CUTTER_H
 
 #include "machine.h"
-#include <global.h>
+#include "global.h"
 #include "cutter_m.h"
 
 /*

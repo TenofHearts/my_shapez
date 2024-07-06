@@ -1,4 +1,4 @@
-#include "machine.h"
+#include "header/machine.h"
 
 bool Device::inLoop = false;
 bool Device::placeMachine = false;

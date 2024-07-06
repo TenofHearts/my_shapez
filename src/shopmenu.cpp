@@ -1,6 +1,6 @@
-#include "shopmenu.h"
+#include "header/shopmenu.h"
 #include "ui_shopmenu.h"
-#include <gamescene.h>
+#include <header/gamescene.h>
 
 ShopMenu::ShopMenu(QWidget *parent)
     : QWidget(parent)

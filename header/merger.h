@@ -2,7 +2,7 @@
 #define MERGER_H
 
 #include "machine.h"
-#include <global.h>
+#include "global.h"
 
 /*
  * 交错器，可以将两天输出轨道上的矿交替输出到同一条轨道

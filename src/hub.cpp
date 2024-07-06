@@ -1,4 +1,4 @@
-#include "hub.h"
+#include "header/hub.h"
 
 static const QVector<int> update_list{HUB_INDEX + 2,
                                       HUB_INDEX + 3,

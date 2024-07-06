@@ -1,4 +1,4 @@
-#include "mine_place.h"
+#include "header/mine_place.h"
 
 Mine_Place::Mine_Place(int x, int y, int type, QWidget *parent):
     Square(x, y, parent, true), type(type)

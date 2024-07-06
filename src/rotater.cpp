@@ -1,5 +1,5 @@
-#include "rotater.h"
-#include <gamescene.h>
+#include "header/rotater.h"
+#include <header/gamescene.h>
 
 Rotater::Rotater(int x, int y, int direction, QWidget *parent):
     Machine(x, y, direction, parent)

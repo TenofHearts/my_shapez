@@ -2,7 +2,7 @@
 #define ROTATER_H
 
 #include "machine.h"
-#include <global.h>
+#include "global.h"
 
 /*
  * 旋转器，就是旋转180°，只对切割后的矿有效果，但是什么类型的矿都能输入

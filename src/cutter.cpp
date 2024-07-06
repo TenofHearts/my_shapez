@@ -1,5 +1,5 @@
-#include "cutter.h"
-#include "gamescene.h"
+#include "header/cutter.h"
+#include "header/gamescene.h"
 
 Cutter::Cutter(int x, int y, int direction, QWidget *parent):
     Machine(x, y, direction, parent)

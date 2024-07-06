@@ -1,6 +1,6 @@
-#include "miner.h"
-#include "gamescene.h"
-#include "mine.h"
+#include "header/miner.h"
+#include "header/gamescene.h"
+#include "header/mine.h"
 
 Miner::Miner(int x, int y, int direction, int type, QWidget *parent):
     Machine(x, y, direction, parent), type(type)
