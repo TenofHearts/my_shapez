@@ -1,10 +1,10 @@
-/ui
+# /ui
 *.exe
 *.qrc
 *.rc
 *.md
 *.pdf
-*.ui
+# *.ui
 *.pro
 *.user
 *.txt

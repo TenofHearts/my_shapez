@@ -27,9 +27,9 @@ Window::Window(QWidget *parent)
     connect(ui->toolButton_2, &QToolButton::clicked, [=](){
         // 读取存档，一次游戏只会调用一次，因此我认为没必要专门定义一个函数
 
-        QString path = QFileDialog::getOpenFileName(this, "请选择存档", "./", "TXT Files(*.txt)");
+        QString path = QFileDialog::getOpenFileName(this, "请选择存档", "./", "TXT Files(*.yj)");
         QFile file(path);
-        // QFile file("./save.txt");
+        // QFile file("./save.yj");
         if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         {
             QMessageBox::critical(this, "Warning!!!", "找不到该存档，请创建新游戏！！！");

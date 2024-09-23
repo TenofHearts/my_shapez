@@ -37,7 +37,7 @@ PauseMenu::PauseMenu(QWidget *parent)
     });
 
     connect(ui->save_btn, &QToolButton::clicked, [=](){
-        QFile file("./save.txt");
+        QFile file("./save.yj");
         if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
         {
             exit(-1);
