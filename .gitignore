@@ -1,7 +1,7 @@
 # /ui
 *.exe
-*.qrc
-*.rc
+# *.qrc
+# *.rc
 *.md
 *.pdf
 # *.ui
@@ -9,4 +9,4 @@
 *.user
 *.txt
 # .gitignore
-.user
+/build
