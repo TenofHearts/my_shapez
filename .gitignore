@@ -1,6 +1,6 @@
 # /ui
 *.exe
-# *.qrc
+*.qrc
 # *.rc
 *.md
 *.pdf
