@@ -8,5 +8,5 @@
 *.pro
 *.user
 *.txt
-.gitignore
+# .gitignore
 .user
